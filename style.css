@@ -1,0 +1,111 @@
+body{
+	background-color: black;
+	color: white;
+}
+button {
+	
+	display: block;
+	font-size:  30px;
+}
+.main-char{
+	position: relative;
+	top: 400px;
+	left: 35%;
+	display: block;
+	height: 200px;
+	widows: 100px;
+}
+
+.attack-animation{
+	height: 200px;
+	widows: 100px;
+  -webkit-animation-name: attack;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes attack {
+  0% {
+
+     transform: translate(10px, -10px);
+  }
+  50%{
+  	 transform: translate(100px, -100px)
+  }
+  100% {
+    transform: translate(0px, -0px);
+  }
+}
+
+.receive-damage{
+	height: 200px;
+	widows: 100px;
+  -webkit-animation-name: player-take-hit;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes player-take-hit {
+  0% {
+
+     transform: translate(-10px, 10px);
+  }
+  50%{
+  	 transform: translate(-10px, 10px)
+  }
+  100% {
+    transform: translate(-0px, 0px);
+  }
+}
+
+.test-animation{
+
+	position: relative;
+	left: 0%;
+	display: block;
+	height: 200px;
+	widows: 100px;
+
+  animation-name: test-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes test-animation {
+  0% {
+
+     transform: translate(10px, -10px);
+  }
+  50%{
+  	 transform: translate(100px, -100px)
+  }
+  100% {
+    transform: translate(0px, -0px);
+  }
+}
+
+.slash {
+	position: absolute;
+	display: none;
+	left: 45%;
+	top: 200px;
+	height: 20px;
+	width: 10px;
+	border-radius: 100% 0  100% 0;
+	background: transparent;
+	z-index: 1;
+	
+}
+
+.troll{
+	position: absolute;
+	left: 40%;
+	background-color: transparent;
+}
+
